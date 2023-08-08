@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Database\Seeders\RolesSeeder;
+use Database\Seeders\AdminUserSeeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,6 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(RolesSeeder::class);
+        $this->call(AdminUserSeeder::class);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
