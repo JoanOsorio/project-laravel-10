@@ -19,8 +19,9 @@
                         Gestionar Usuarios
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="">Crear Usuario</a></li>
-                            <li><a class="dropdown-item" href="">Administración de Usuarios</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/createUser') }}">Crear Usuario</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/adminUsers') }}">Administración de Usuarios</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/userLogs') }}">Logs de Usuarios</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -28,7 +29,7 @@
                         Consumo de API
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="">Listado de Usuarios</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/users') }}">Listado de Usuarios</a></li>
                         </ul>
                     </li>    
                 @endif    

@@ -29,8 +29,10 @@
                         </div>
                         </center>
                         @if ($errors->any())
-                            <div style="color: red;">
-                                {{ $errors->first() }}
+                            <div class='mt-3'>
+                                <div class='alert alert-danger' role='alert'>
+                                    Usuario y/o contraseña Incorrecta
+                                </div>
                             </div>
                         @endif
                     </form>
