@@ -19,4 +19,8 @@ yarn-error.log
 /.idea
 /.vscode
 composer.lock
+<<<<<<< HEAD
 package-lock.json
+=======
+package-lock.json
+>>>>>>> 45e1571 (CRUD usuarios y Consumo de Api)

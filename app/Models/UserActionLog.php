@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory; 
+use Illuminate\Database\Eloquent\Model;
+
+class UserActionLog extends Model
+{
+    use HasFactory;
+
+    protected $fillable = ['user_id', 'action']; // Atributos del modelo que pueden ser asignados en masa.
+
+    /**
+     * Define la relación con el modelo 'User'.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class); // Establece una relación "pertenece a" con el modelo 'User'.
+    }
+}
