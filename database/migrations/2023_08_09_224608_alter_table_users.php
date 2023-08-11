@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('cedula', 11)->nullable();
             $table->date('birthdate')->nullable();
             $table->unsignedBigInteger('city_code')->nullable();
-            $table->foreign('city_id')->references('id')->on('municipios');
+            $table->foreign('city_code')->references('id')->on('municipios');
             $table->dropUnique('users_email_unique');
             $table->unique('email', 'users_email_unique')->whereNotNull('email');
         });
