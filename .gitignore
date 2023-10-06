@@ -5,7 +5,6 @@
 /public/storage
 /storage/*.key
 /vendor
-.env
 .env.example
 .env.backup
 .env.production
@@ -20,4 +19,3 @@ yarn-error.log
 /.vscode
 composer.lock
 package-lock.json
-readme.txt
